@@ -7,7 +7,7 @@ Técnicas para praticar:
  - docker
  - python
  - ML (OCR)
- - String distance
+ - String match/distance
 
 
 Objetivo:

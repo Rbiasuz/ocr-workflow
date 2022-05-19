@@ -1,0 +1,15 @@
+
+qlqr email (usar regex para email)
+grupo1
+
+
+palavras - senha/password (ou similares)
+grupo2
+
+
+palavras - email/login (ou similares)
+grupo3
+
+
+palavras - data/dado (ou similares)
+grupo 4
