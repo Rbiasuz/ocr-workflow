@@ -19,3 +19,5 @@ def string_distance(str1,str2):
     #TODO
 
     return distance
+
+teste qualquers
