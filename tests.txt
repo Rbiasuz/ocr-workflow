@@ -11,4 +11,4 @@ import PIL
 im = PIL.Image.open('4e486cf2-62e6-4e36-8d2c-dfbe6ae1f001.jpg')
 txt = pytesseract.image_to_string(im)
 print(txt)
-Teste 2
+Teste 23
