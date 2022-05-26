@@ -14,3 +14,5 @@ print(txt)
 Teste 23
 
 qualquer coisa
+
+docker run -it --rm --name teste_tesseract -v /Users/eliasmoura/ocr-workflow/assets:/media  tesseract
