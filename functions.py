@@ -8,7 +8,7 @@ def get_text(image):
     """ 
     Recebe uma imagem e retorna o texto presente na mesma (string)
     """
-    im = PIL.Image.open(image)##'4e486cf2-62e6-4e36-8d2c-dfbe6ae1f001.jpg')
+    im = PIL.Image.open(image)
     txt = pytesseract.image_to_string(im)
     txt = re.sub(' +', ' ', txt)
     txt = txt.replace('\n','')
