@@ -8,7 +8,7 @@ import numpy as np
 import pytesseract
 import PIL
 
-im = PIL.Image.open('4e486cf2-62e6-4e36-8d2c-dfbe6ae1f001.jpg')
+im = PIL.Image.open('register_email.png')
 txt = pytesseract.image_to_string(im)
 print(txt)
 Teste 23
@@ -16,3 +16,5 @@ Teste 23
 qualquer coisa
 
 docker run -it --rm --name teste_tesseract -v /Users/eliasmoura/ocr-workflow/assets:/media  tesseract
+
+docker run -it -v /Users/eliasmoura/ocr-workflow/assets:/media --rm --name teste_tesseract tesseract:latest
