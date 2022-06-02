@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee04957e-eceb-400c-b9cc-5a2be8854f2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infras/tesseract/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/infras/tesseract/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +40,8 @@
       <updated>1653594289032</updated>
       <workItem from="1653594292955" duration="2149000" />
       <workItem from="1654042481045" duration="1188000" />
-      <workItem from="1654170259561" duration="5977000" />
+      <workItem from="1654170259561" duration="6492000" />
+      <workItem from="1654193959544" duration="1748000" />
     </task>
     <servers />
   </component>
