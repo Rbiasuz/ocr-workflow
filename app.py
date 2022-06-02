@@ -1,3 +1,5 @@
+
+import os
 from flask import Flask, render_template, request
 from functions import *
 
@@ -6,14 +8,14 @@ app = Flask(__name__)
 # routes
 @app.route("/", methods=['GET', 'POST'])
 def main():
-    return render_template("assets/templates/index.html")
+    return render_template(r"/media/assets/templates/index.html")
 
 @app.route("/submit", methods = ['GET', 'POST'])
 def get_output():
     if request.method == 'POST':
         img = request.files['my_image']
 
-        img_path = "assets/base-images/" + img.filename
+        img_path = "/media/assets/base-images/" + img.filename
         img.save(img_path)
 
         p = get_text(img_path)
@@ -22,4 +24,5 @@ def get_output():
 
 
 if __name__ =='__main__':
-    app.run(debug = True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
