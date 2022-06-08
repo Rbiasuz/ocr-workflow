@@ -16,3 +16,7 @@ RUN apt-get update \
 RUN pip3 install pytesseract
 RUN pip3 install numpy
 RUN pip3 install flask
+
+EXPOSE 80
+
+EXPOSE 5000
