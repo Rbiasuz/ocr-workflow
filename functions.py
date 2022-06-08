@@ -18,11 +18,17 @@ def get_text(image):
     return txt
 
 
-def string_distance(str1,str2):
+def string_distance(x,y):
     """ 
     Recebe duas strings e calcula a distância entre elas
     """
 
-    #TODO
+    """
+    Jaccard similarity
+    """
+
+    intersection_cardinality = len(set.intersection(*[set(x), set(y)]))
+    union_cardinality = len(set.union(*[set(x), set(y)]))
+    return intersection_cardinality/float(union_cardinality)
 
     return distance

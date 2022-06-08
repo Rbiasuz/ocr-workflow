@@ -14,11 +14,23 @@ def main():
 def get_output():
     if request.method == 'POST':
         img = request.files['my_image']
-
         img_path = "/media/assets/base-images/" + img.filename
         img.save(img_path)
 
-        p = get_text(img_path)
+        img2 = request.files['my_image2']
+        img_path2 = "/media/assets/base-images/" + img2.filename
+        img2.save(img_path2)
+
+        txt1 = get_text(img_path)
+        txt2 = get_text(img_path2)
+
+        l1=[]
+        l2=[]
+
+        l1[:0]=txt1
+        l2[:0]=txt2
+
+        p = string_distance(l1,l2)
 
     return render_template("index.html", prediction = p, img_path = img_path)
 
