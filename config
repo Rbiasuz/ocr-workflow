@@ -1,0 +1,21 @@
+{
+    
+    "emails": { "keywords": ["exp1", "exp2"],
+                "folder": ["caminho1"],
+                "action": "save",
+                "threshold": 0.90
+    },
+
+    "senhas": { "keywords": ["exp1", "exp2", "iot", "nft"],
+        "folder": ["caminho1"],
+        "action": "save",
+        "threshold": 0.70
+    },
+
+    "empresa": { "keywords": ["empresa_x"],
+        "folder": ["caminho1"],
+        "action": "save",
+        "threshold": 0.85
+    }
+
+}

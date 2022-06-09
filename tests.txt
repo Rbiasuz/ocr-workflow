@@ -1,3 +1,4 @@
+docker run -it -v  C:\Users\rodri\Documents\class\ocr-workflow:/media -p 5000:5000 --rm --name teste_tesseract pytesseract:latest
 
 
 docker run -it -v C:\Users\rodri\Documents\class\ocr-workflow\assets:/media --rm --name teste_biasuz pytesseract:latest
