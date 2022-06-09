@@ -16,6 +16,7 @@ with open('config', 'r') as f:
 def main():
     return render_template("index.html")
 
+
 @app.route("/submit", methods = ['GET', 'POST'])
 def get_output():
     if request.method == 'POST':

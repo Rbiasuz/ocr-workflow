@@ -1,3 +1,5 @@
 .idea
 .xml
 GIT
+__pycache__
+.DS_Store

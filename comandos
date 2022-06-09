@@ -1,0 +1,15 @@
+#Windows
+docker run -it -v  C:\Users\rodri\Documents\class\ocr-workflow:/media -p 5000:5000 --rm --name teste_tesseract pytesseract:latest
+
+#MAC
+docker run -it --rm --name teste_tesseract -v /Users/eliasmoura/ocr-workflow/assets:/media  tesseract
+docker run -it -v /Users/eliasmoura/ocr-workflow:/media -p 5000:5000 --rm --name teste_tesseract tesseract:latest
+
+
+Dica: $(pwd)
+
+
+#Build
+docker build --pull --rm -t tesseract:latest .
+
+
