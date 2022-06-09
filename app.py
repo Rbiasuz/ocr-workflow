@@ -32,6 +32,9 @@ def get_output():
 
         p = string_distance(l1,l2)
 
+        identifica_img_grupo(img_path)
+        identifica_img_grupo(img_path2)
+
     return render_template("index.html", prediction = p, img_path = img_path)
 
 
