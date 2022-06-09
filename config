@@ -1,21 +1,31 @@
 {
     
-    "emails": { "keywords": ["exp1", "exp2"],
-                "folder": ["caminho1"],
+    "emails": { "keywords": ["@ucs.br", "@gmail.com"],
+                "folder": ["/assets/email/"],
                 "action": "save",
-                "threshold": 0.90
+                "threshold": 1,
+                "formula": "exact"
     },
 
-    "senhas": { "keywords": ["exp1", "exp2", "iot", "nft"],
-        "folder": ["caminho1"],
+    "senhas": { "keywords": ["senha", "password", "credencial"],
+        "folder": ["/assets/senha/"],
         "action": "save",
-        "threshold": 0.70
+        "threshold": 0.80,
+        "formula": "jaccard"
     },
 
-    "empresa": { "keywords": ["empresa_x"],
-        "folder": ["caminho1"],
+    "login": { "keywords": ["email", "login"],
+        "folder": ["/assets/login/"],
         "action": "save",
-        "threshold": 0.85
+        "threshold": 0.80,
+        "formula": "jaccard"
+    },
+
+    "dados": { "keywords": ["dado", "data"],
+        "folder": ["/assets/dados/"],
+        "action": "save",
+        "threshold": 0.80,
+        "formula": "cosine"
     }
 
 }

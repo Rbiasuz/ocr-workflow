@@ -1,9 +1,15 @@
 
 import os
+import json
 from flask import Flask, render_template, request
 from functions import *
 
 app = Flask(__name__,template_folder='templates')
+
+
+with open('config', 'r') as f:
+    config = json.load(f)
+
 
 # routes
 @app.route("/", methods=['GET', 'POST'])
