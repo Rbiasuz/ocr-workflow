@@ -16,6 +16,9 @@ RUN apt-get update \
 RUN pip3 install pytesseract
 RUN pip3 install numpy
 RUN pip3 install flask
+RUN pip3 install nltk
+RUN pip3 install scikit-learn
+
 
 EXPOSE 80
 
