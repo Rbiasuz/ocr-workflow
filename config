@@ -26,6 +26,11 @@
         "action": "save",
         "threshold": 0.80,
         "formula": "cosine"
-    }
+    },
 
+    "crawler": { "mainfolder": ["assets/imagescrawler"],
+            "backupfolder": ["assets/imagescrawler/processados"],
+            "type": [".jpg,.jpeg,.gif"],
+            "interval": "5"
+        }
 }
