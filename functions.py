@@ -25,7 +25,10 @@ def get_text(image):
 
 def clean_txt(txt):
     """ 
-    Recebe uma string vinda de um OCR e organiza em uma lista removendo "S" do final de cada palavra
+    Recebe uma string vinda de um OCR e organiza em uma lista 
+    remove "S" do final de cada palavra
+    remove acentos
+    remove letras maiusculas
     """
 
     txt = txt.split()
@@ -36,7 +39,10 @@ def clean_txt(txt):
 
 def string_distance(x,y, formula):
     """ 
-    Recebe duas strings e calcula a distância entre elas
+    Recebe duas strings e calcula a distância entre elas, de acordo com as seguintes regras:
+     distancia jaccard -> 'jaccard' [https://en.wikipedia.org/wiki/Jaccard_index]
+     distancia cosseno -> 'cosine' [https://en.wikipedia.org/wiki/Cosine_similarity]
+     match exato -> 'exact'
     """
 
     if formula == 'jaccard':
@@ -89,7 +95,7 @@ def string_distance(x,y, formula):
         if x == y:
             vreturn =100
         else:
-            vreturn =0
+            vreturn = 0
 
         return vreturn
 
