@@ -43,7 +43,7 @@ while True:
                 foldersalvar = config[target]['folder']
 
                 for word in texto.split():
-                    for kwy in keyword:
+                    for key in keyword:
                         p = string_distance(word,key,formula)
 
                         if p >= int(threshold):
@@ -58,12 +58,3 @@ while True:
             shutil.move(mainfolder+"/"+file, backupfolder+"/"+file)
         else:
             os.remove(mainfolder+"/"+file)
-
-
-#while true para intervalo de tempo
-
-#loop os list dir
-
-#
-
-

@@ -100,21 +100,5 @@ def salva_imagem(img,url,nome):
     with open(url+nome, 'wb') as f:
         img.save(f)
 
-def main_loop(imagem):
-    img = Image.open(imagem)
-    texto = get_text(img)
-    texto = clean_txt(texto)
-
-    for group in config.keys():
-        formula = config[group]['formula']
-        keyword = config[group]['keywords']
-
-
-        for key in keyword:
-            for word in texto:
-                result = string_distance(key, word, formula)
-                if result > config[group]['threshold']:
-                    salva_imagem(img,config[group]['folder'],imagem)
-
 
     
