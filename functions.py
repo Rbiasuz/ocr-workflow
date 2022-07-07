@@ -1,6 +1,6 @@
 from ast import keyword
 import numpy as np
-import pytesseract
+#import pytesseract
 import PIL
 from PIL import Image
 import re
