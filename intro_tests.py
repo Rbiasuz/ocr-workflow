@@ -14,11 +14,25 @@ def test_sum2():
     assert sum([1, 1]) != 3,  "should not be 3"
 
 def test_sum3():
-    assert sum([3, 3]) == 6,  "should be 2"
+    assert sum([3, 3]) == 7,  "should be 2"
 
 def test_sum4():
     assert sum([15, 15]) == 30,  "should be 30"
 
+
+
+def par_impar(num):
+    if num%2 == 0:
+        return num*num
+    else:
+        return num-10
+
+
+def test_par_impar():
+    assert par_impar(2) == 4,  "should be 4"
+
+def test_par_impar2():
+    assert par_impar(1) == -9,  "should be -9"
 
 if __name__ == "__main__":
     test_sum()

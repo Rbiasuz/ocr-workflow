@@ -1,6 +1,6 @@
 from ast import keyword
 import numpy as np
-#import pytesseract
+import pytesseract
 import PIL
 from PIL import Image
 import re
@@ -31,15 +31,15 @@ def clean_txt(txt):
     remove letras maiusculas
     """
 
-    txt = txt.split()
-    txt = [i.strip('s') for i in txt]
+    txt = txt.lower().split()
+    txt = [i.rstrip('s') for i in txt]
 
     return txt
 
 
 def string_distance(x,y, formula):
     """ 
-    Recebe duas strings e calcula a distância entre elas, de acordo com as seguintes regras:
+    Recebe duas strings - palavras (não frases) e calcula a distância entre elas, de acordo com as seguintes regras:
      distancia jaccard -> 'jaccard' [https://en.wikipedia.org/wiki/Jaccard_index]
      distancia cosseno -> 'cosine' [https://en.wikipedia.org/wiki/Cosine_similarity]
      match exato -> 'exact'
@@ -93,7 +93,7 @@ def string_distance(x,y, formula):
     elif formula == 'exact':
 
         if x == y:
-            vreturn =100
+            vreturn = 100
         else:
             vreturn = 0
 
@@ -108,3 +108,4 @@ def salva_imagem(img,url,nome):
 
 
     
+

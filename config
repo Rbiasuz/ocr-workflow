@@ -10,21 +10,21 @@
     "senhas": { "keywords": ["senha", "password", "credencial"],
         "folder": ["/assets/senha/"],
         "action": "save",
-        "threshold": 0.80,
+        "threshold": 0.70,
         "formula": "jaccard"
     },
 
     "login": { "keywords": ["email", "login"],
         "folder": ["/assets/login/"],
         "action": "save",
-        "threshold": 0.80,
+        "threshold": 0.70,
         "formula": "jaccard"
     },
 
     "dados": { "keywords": ["dado", "data"],
         "folder": ["/assets/dados/"],
         "action": "save",
-        "threshold": 0.80,
+        "threshold": 0.70,
         "formula": "cosine"
     },
 

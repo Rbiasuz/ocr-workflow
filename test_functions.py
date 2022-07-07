@@ -27,6 +27,7 @@ class MyTest(unittest.TestCase):
     def test_string_distance6(self):
         self.assertTrue(string_distance(w4,w3,'jaccard') >= 0.7)
 
+
     def test_clean_txt(self):
         self.assertEqual(clean_txt(f1), ['essa', 'frase', 'sao', 'do', 'ocr'])
 

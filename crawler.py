@@ -38,7 +38,7 @@ while True:
 
         try:
             texto = get_text(mainfolder+"/"+file)
-            texto = clean_txt(texto) #add aqui
+            texto = clean_txt(texto)
 
             for target in targets:
                 achou_target = 0
@@ -47,14 +47,12 @@ while True:
                 threshold = config[target]['threshold']
                 foldersalvar = config[target]['folder']
 
-                #for word in texto.split():
                 for word in texto:
                     if achou_target == 1:
                         break
 
                     for key in keywords:
                         p = string_distance(word,key,formula)
-                        #if p >= int(threshold):
                         if p >= threshold:
                             salva_imagem(mainfolder+"/"+file,foldersalvar,file): ##move arq
                             achou_target = 1
